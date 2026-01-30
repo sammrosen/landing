@@ -1,7 +1,7 @@
 const pricingPlans = [
   {
     name: "Lead to Member System",
-    price: "$498",
+    price: "$697",
     period: "/month",
     features: [
       "Professional Website",
@@ -16,7 +16,7 @@ const pricingPlans = [
   },
   {
     name: "Member to PT System",
-    price: "$697",
+    price: "$896",
     period: "/month",
     includes: "Everything in Lead to Member +",
     features: [

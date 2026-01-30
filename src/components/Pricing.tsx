@@ -1,11 +1,23 @@
 const pricingPlans = [
   {
+    name: "Starter System",
+    price: "$498",
+    period: "/month",
+    features: [
+      "Professional website",
+      "Prospect self-serve booking",
+      "ABC/gymsales integration",
+    ],
+    cta: "Get Started",
+    highlighted: false,
+    stripeLink: "#", // Replace with your Stripe link
+  },
+  {
     name: "Lead to Member System",
     price: "$697",
     period: "/month",
+    includes: "Everything in Starter +",
     features: [
-      "Professional Website",
-      "Prospect self serve booking",
       "Prospect self-serve sign up",
       "Prospect email marketing",
       "ABC Ignite & GymSales Integration",
@@ -31,8 +43,8 @@ const pricingPlans = [
   },
   {
     name: "Custom Business System",
-    price: "$2,000",
-    period: "+ $599/mo",
+    price: "$3,000",
+    period: "+ $799/mo",
     startingAt: true,
     features: [
       "Professional website",
@@ -50,13 +62,13 @@ const pricingPlans = [
 export default function Pricing() {
   return (
     <section className="py-12 lg:py-20">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Pricing cards */}
-        <div className="grid lg:grid-cols-3 gap-6">
+        <div className="grid lg:grid-cols-4 gap-4">
           {pricingPlans.map((plan, index) => (
             <div
               key={index}
-              className={`relative p-8 rounded-2xl border ${
+              className={`relative p-6 rounded-2xl border ${
                 plan.highlighted
                   ? "border-[var(--primary)] glow"
                   : "border-[var(--border)]"

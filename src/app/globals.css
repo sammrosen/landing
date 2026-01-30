@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --primary: #0066ff;
+  --primary-dark: #0052cc;
+  --secondary: #141414;
+  --accent: #00d4ff;
+  --muted: #888888;
+  --border: #222222;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  background-color: #0a0a0a !important;
+  color: #ededed;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  min-height: 100vh;
+}
+
+/* Custom gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #0066ff 0%, #00d4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Gradient background for elements */
+.gradient-bg {
+  background: linear-gradient(135deg, #0066ff 0%, #00d4ff 100%);
+}
+
+/* Subtle glow effect */
+.glow {
+  box-shadow: 0 0 60px rgba(0, 102, 255, 0.15);
+}
